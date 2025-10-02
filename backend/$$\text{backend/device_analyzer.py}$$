@@ -1,0 +1,28 @@
+# Script de análisis que se ejecutará en GitHub Actions
+import os
+import requests
+
+def run_security_analysis():
+    print("--- Starting GitHub Actions Security Analysis ---")
+
+    # Las credenciales de la Entidad de Servicio son inyectadas como variables de entorno por azure/login@v1
+    client_id = os.getenv('AZURE_CLIENT_ID')
+    tenant_id = os.getenv('AZURE_TENANT_ID')
+
+    if client_id and tenant_id:
+        print(f"Azure Environment: Configured with Tenant ID: {tenant_id}")
+    else:
+        print("ERROR: Azure environment variables not found.")
+
+    # Simulación de un análisis
+    print("Running static analysis on mobile-app code (simulated)...")
+    # Aquí se integraría una herramienta como Bandit (Python) para el backend o ejecutar scripts de escaneo de Android.
+
+    issues = 3 # Número simulado de vulnerabilidades encontradas
+
+    print(f"Analysis complete. Found {issues} security issues.")
+
+    # En una implementación real, este script subiría los resultados a Azure o a un artefacto de GitHub.
+
+if __name__ == "__main__":
+    run_security_analysis()
