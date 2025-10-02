@@ -8,14 +8,11 @@
 # -------------------------------------------------------------------------
 # IGNORE PYTHON / BACKEND (backend/):
 # -------------------------------------------------------------------------
-# Entornos virtuales
 venv/
 .venv/
 env/
-# Archivos de caché
 __pycache__/
 *.pyc
-# Directorios de compilación/distribución
 build/
 dist/
 *.egg-info/
@@ -23,13 +20,10 @@ dist/
 # -------------------------------------------------------------------------
 # IGNORE ANDROID / MOBILE-APP (mobile-app/):
 # -------------------------------------------------------------------------
-# Creados por Gradle
 .gradle/
-# Creados por Android Studio
 local.properties
 .idea/
 captures/
-# Directorios de compilación y salida (artifacts)
 mobile-app/**/build/
 mobile-app/build/
 *.apk
