@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Android Security Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background-color: #f4f4f9; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        h1 { color: #0078d4; border-bottom: 2px solid #0078d4; padding-bottom: 10px; }
+        h2 { color: #333; }
+        .status-ok { color: green; font-weight: bold; }
+        .status-warning { color: orange; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Android Security Analyzer Dashboard</h1>
+        <p>Este dashboard mostrará los resultados del último análisis ejecutado por el flujo de trabajo de GitHub Actions.</p>
+
+        <h2>Resumen del Análisis de Seguridad</h2>
+
+        <p>Estado del Último Análisis del Backend: <span class="status-ok">✔</span> Ejecución Exitosa</p>
+        <p>Vulnerabilidades Críticas Encontradas: <span class="status-ok">0</span></p>
+        <p>Vulnerabilidades Menores Encontradas: <span class="status-warning">3</span></p>
+
+        <h2>Dispositivos Monitoreados</h2>
+        <p>Total de Dispositivos: 2</p>
+
+        <small>Última actualización: [Fecha y Hora de la Ejecución de GitHub Actions]</small>
+    </div>
+</body>
+</html>
