@@ -1,0 +1,6 @@
+# Azure Authentication for Service Principal
+azure-identity
+# For web API
+Flask
+# Utility for requests
+requests
