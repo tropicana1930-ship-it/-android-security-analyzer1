@@ -1,0 +1,43 @@
+# -------------------------------------------------------------------------
+# IGNORE GLOBAL: Archivos de Sistema Operativo y Editores
+# -------------------------------------------------------------------------
+.DS_Store
+.vscode/
+*.swp
+
+# -------------------------------------------------------------------------
+# IGNORE PYTHON / BACKEND (backend/):
+# -------------------------------------------------------------------------
+# Entornos virtuales
+venv/
+.venv/
+env/
+# Archivos de caché
+__pycache__/
+*.pyc
+# Directorios de compilación/distribución
+build/
+dist/
+*.egg-info/
+
+# -------------------------------------------------------------------------
+# IGNORE ANDROID / MOBILE-APP (mobile-app/):
+# -------------------------------------------------------------------------
+# Creados por Gradle
+.gradle/
+# Creados por Android Studio
+local.properties
+.idea/
+captures/
+# Directorios de compilación y salida (artifacts)
+mobile-app/**/build/
+mobile-app/build/
+*.apk
+*.aab
+
+# -------------------------------------------------------------------------
+# IGNORAR SECRETS: Archivos de configuración con credenciales sensibles
+# -------------------------------------------------------------------------
+*.env
+.env.local
+secrets.yaml
